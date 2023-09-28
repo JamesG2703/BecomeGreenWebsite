@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+Programmer: James
+Date: 2019
+Purpose: Website practice
+-->
+
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+background-color: #47d147
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul search-container {
+float: right;
+}
+
+ul input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+ul search-container button {
+float: right;
+padding: 6px;
+margin-top: 8px;
+margin-right: 16px;
+background: #ddd;
+font-size: 17px;
+border: none;
+cursor: pointer;
+}
+ul search-container button:hover {
+background: #ccc;
+}
+  
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h2 {
+color: grey;
+}
+.fa {
+padding: 20px;
+font-size: 30px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+border-radius: 50%;
+}
+.fa-li {
+float: none;
+display: inline-block;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-img {
+float: right;
+}
+.fa text {
+color: grey;
+}
+
+</style>
+<title>Become Green Home</title>
+<link rel="Stylesheet" type = "text/css" href="CSS/main.css">
+<meta charset="UTF-8">
+</head>
+<body>
+    <img src="Images/becomeGreen-logo-Highres.png" alt="logo" width="1350" height="300" class="center">
+	<h1 style="text-align:center;"><u>Home</u></h1>
+
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="staff.html">Staff</a></li>
+  <li><a href="stock.html">Stock</a></li>
+  <li><a href="course.html">Course</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li style="float:right">
+  <form>
+  <input type="text" placeholder="Search..">
+  </input>
+  
+</ul>
+
+<p>We are a company located on the Suffolk and Essex border driven by a desire to reduce waste in design and introducing the upcycling concept. All our products are carefully selected. They are handmade by passionate designers that care about the environment. Jackie, Jon and Kate met whilst studying design at the Colchester School of Art, found that they shared the same passion and started BecomeGreen.
+We pride ourselves in our customer service and personal approach to our projects and the projects that customers commission us to create for them. If you have an idea, simply contact us and we will bring it alive for you. Bespoke design and manufacturing work is what we are good at! We can turn personal things, like a champagne bottle from your wedding into something significant to act as a unique reminder of that day.
+</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b9KF6D0V26E" frameborder="0" class="center" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id=".fa">
+<ul>
+<tr>
+<h2><u>Contact Details</u></h2>
+<td><a href="mailto:upcycle@becomegreen.co.uk">upcycle@becomegreen.co.uk</a></td>
+<td><p style="color:grey">01473 888008</p></td>
+<td><p style="color:grey;">The Barn,</p></td>
+<td><p style="color:grey;">Farm Road,</p></td>
+<td><p style="color:grey;">Hadleigh,</p></td>
+<td><p style="color:grey;">Suffolk.</p></td>
+<td><img src="Images/becomeGreen-logo-Highres.png" alt="logo" style="width:200px;height:100px;"></td>
+</tr>
+<h2 style="text-align:center">Visit our social media!</h2>
+<li>
+<a href="https://twitter.com/BecomeGreenSB" style="margin-left:525px;"><i class="fa fa-twitter"></i></a></li>
+<li>
+<a href="https://www.facebook.com/become.green.1""><i class="fa fa-facebook"></i></a></li>
+</ul>
+</div>
+<p id="demo"></p>
+<script>
+alert("Welcome to the Become Green home page");
+function startTime() {
+var d = new Date();
+var h = d.getHours();
+var m = d.getMinutes();
+var s = d.getSeconds();
+m = checkTime(m);
+s = checkTime(s);
+document.getElementById('txt').innerHTML = d;
+h + ":" + m + ":" + s;
+var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+if (i<10) {i = "0" + i};
+return i;
+}
+</script>
+<noscript>
+"Your javascript is blocked"
+</noscript>
+</head>
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+</html>
